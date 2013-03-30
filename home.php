@@ -70,9 +70,6 @@ if ( !defined('ABSPATH')) exit;
 				  }
 			?>
 
-            <!-- </div> --><!-- end of .call-to-action -->
-            <?php //endif; ?>
-
         </div><!-- end of .col-460 -->
 
         <div id="featured-image" class="grid col-460 fit">
