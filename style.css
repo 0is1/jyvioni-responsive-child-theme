@@ -52,7 +52,12 @@ body{
   background-color: white;
   background-color: rgba(255,255,255,0.8);
 }
-
+.home #wrapper{
+  background-color: transparent;
+  border: none;
+  margin: 20px auto;
+  padding: 0 0 20px;
+}
 /* =Links
 -------------------------------------------------------------- */
 a {
