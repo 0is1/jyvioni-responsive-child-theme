@@ -5,7 +5,7 @@ This theme needs Responsive-theme as master theme to work.
 
 ## Plugins in use
 * flexible-posts-widget-jyvioni (https://github.com/0is1/flexible-posts-widget-jyvioni)
-** Little "ad hoc" mod of flexible-posts-widget
+  * Little "ad hoc" mod of flexible-posts-widget
 * google-calendar-events
 * wordpress (Facebook-plugin)
 * wp-jquery-lightbox
