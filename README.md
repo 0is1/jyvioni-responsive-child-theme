@@ -1,6 +1,6 @@
 # Jyvioni-responsive-child-theme
 
-Theme for jyvioni.org website. Based on responsive-theme by ThemeID http://themeid.com
+Theme for jyvioni.org website. Based on responsive-theme by ThemeID http://themeid.com/responsive-theme/
 This theme needs Responsive-theme as master theme to work.
 
 ## Plugins in use
