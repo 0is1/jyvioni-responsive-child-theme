@@ -55,3 +55,9 @@ Current web hosting provider doesn't support git, so we use GitHub's SVN access 
  $ cd wp-content/themes/_sources/jrct
  $ svn switch --relocate `svn info |grep ^URL: |cut -d" " -f2` https://github.com/new/repo_url
  $ svn up
+
+
+## Misc
+* based on [Responsive](http://themeid.com/responsive-theme/) [WordPress theme](http://wordpress.org/extend/themes/responsive)
+* likes [Google Calendar Events](http://wordpress.org/extend/plugins/google-calendar-events/) plugin [author](http://rhanney.co.uk/plugins/google-calendar-events/)
+* uses some icons from [Iconic](http://somerandomdude.com/work/iconic/) [source](https://github.com/somerandomdude/Iconic)
