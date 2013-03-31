@@ -3,8 +3,23 @@
  *
  * @author Ville Korhonen <ville@xd.fi>
  * @version 1.0
+ *
+ * 
  */
 
+/*
+Current formatting for GCE items:
+
+<div class="gce-list-event" id="event-[event-id]">
+ <h2 class="event-title">[event-title]</h2>
+ <p class="event-time"><span>[if-now]<strong>NYT</strong>, päättyy [end-human] ([if-multi-day][end-date] klo[/if-multi-day] [end-time])[/if-now][if-not-now][start-date] klo [start-time] - [if-multi-day][end-date] klo[/if-multi-day] [end-time][/if-not-now]<br /><span class="small quiet">(tapahtuman alkuun [start-human])</span></span>
+ </p>
+
+ [if-location]<div class="event-location"><span>[maps-link][location][/maps-link]</div></span>[/if-location]
+ [if-description]<div class="description"><span>[description]</span></div>[/if-description]
+ <div class="more small">[link newwindow="true"]Lisätietoja...[/link]</div>
+</div>
+*/
 
 #widgets {
     .gce-widget-list .gce-list .gce-list-event {
