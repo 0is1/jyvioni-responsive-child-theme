@@ -4,23 +4,29 @@
  * @author Ville Korhonen <ville@xd.fi>
  * @version 1.0
  */
-.gce-widget-list .gce-list .gce-list-event {
+#widgets .gce-widget-list .gce-list .gce-list-event {
   background: transparent; }
-
-ul.gce-list .gce-list-title {
+#widgets ul.gce-list span {
+  color: black; }
+#widgets ul.gce-list .gce-list-title {
   font-size: 1.1em;
   margin-top: 1em; }
-ul.gce-list .gce-list-event {
+#widgets ul.gce-list .gce-list-event {
   background: transparent; }
-  ul.gce-list .gce-list-event h2.event-title {
+  #widgets ul.gce-list .gce-list-event h2.event-title {
     font-size: 1.4em;
     margin-top: 0.25em; }
-ul.gce-list .event-time span {
+#widgets ul.gce-list .event-time span {
   background-image: url("icons/clock_16x16.png");
   background-repeat: no-repeat;
   background-position: middle left;
   padding-left: 20px; }
-ul.gce-list .description {
+#widgets ul.gce-list .event-location span {
+  background-image: url("icons/fullscreen_exit_16x16.png");
+  background-repeat: no-repeat;
+  background-position: middle left;
+  padding-left: 20px; }
+#widgets ul.gce-list .description {
   white-space: pre-wrap;
   /* css-3 */
   white-space: -moz-pre-wrap;
@@ -31,7 +37,7 @@ ul.gce-list .description {
   /* Opera 7 */
   word-wrap: break-word;
   /* Internet Explorer 5.5+ */ }
-ul.gce-list .more a {
+#widgets ul.gce-list .more a {
   background-image: url("icons/info_8x16.png");
   background-repeat: no-repeat;
   background-position: middle left;

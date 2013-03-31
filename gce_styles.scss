@@ -5,44 +5,58 @@
  * @version 1.0
  */
 
-.gce-widget-list .gce-list .gce-list-event {
-    background: transparent;
-}
 
- ul.gce-list {
-    .gce-list-title {
-        font-size: 1.1em;
-        margin-top: 1em;
+#widgets {
+    .gce-widget-list .gce-list .gce-list-event {
+        background: transparent;
     }
 
-    .gce-list-event {
-        background: transparent;
+    ul.gce-list {
+        span {
+            color: black;
+        }
 
-        h2.event-title {
-            font-size: 1.4em;
-            margin-top: 0.25em;
+        .gce-list-title {
+            font-size: 1.1em;
+            margin-top: 1em;
+        }
+
+        .gce-list-event {
+            background: transparent;
+
+            h2.event-title {
+                font-size: 1.4em;
+                margin-top: 0.25em;
+            }
+        }
+
+        .event-time span {
+            background-image: url('icons/clock_16x16.png');
+            background-repeat: no-repeat;
+            background-position: middle left;
+            padding-left: 20px;
+        }
+
+        .event-location span {
+            background-image: url('icons/fullscreen_exit_16x16.png');
+            background-repeat: no-repeat;
+            background-position: middle left;
+            padding-left: 20px;            
+        }
+
+        .description {
+            white-space: pre-wrap; /* css-3 */    
+            white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+            white-space: -pre-wrap; /* Opera 4-6 */    
+            white-space: -o-pre-wrap; /* Opera 7 */    
+            word-wrap: break-word; /* Internet Explorer 5.5+ */
+        }
+
+        .more a {
+            background-image: url('icons/info_8x16.png');
+            background-repeat: no-repeat;
+            background-position: middle left;
+            padding-left: 20px;
         }
     }
-
-    .event-time span {
-        background-image: url('icons/clock_16x16.png');
-        background-repeat: no-repeat;
-        background-position: middle left;
-        padding-left: 20px;
-    }
-
-    .description {
-        white-space: pre-wrap; /* css-3 */    
-        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-        white-space: -pre-wrap; /* Opera 4-6 */    
-        white-space: -o-pre-wrap; /* Opera 7 */    
-        word-wrap: break-word; /* Internet Explorer 5.5+ */
-    }
-
-    .more a {
-        background-image: url('icons/info_8x16.png');
-        background-repeat: no-repeat;
-        background-position: middle left;
-        padding-left: 20px;
-    }
- }
+}
