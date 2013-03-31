@@ -4,6 +4,9 @@
  * @author Ville Korhonen <ville@xd.fi>
  * @version 1.0
  */
+.gce-widget-list .gce-list .gce-list-event {
+  background: transparent; }
+
 ul.gce-list .gce-list-title {
   font-size: 1.1em;
   margin-top: 1em; }
@@ -12,8 +15,6 @@ ul.gce-list .gce-list-event {
   ul.gce-list .gce-list-event h2.event-title {
     font-size: 1.4em;
     margin-top: 0.25em; }
-ul.gce-list .gce-widget-list .gce-list .gce-list-event {
-  background: transparent; }
 ul.gce-list .description {
   white-space: pre-wrap;
   /* css-3 */

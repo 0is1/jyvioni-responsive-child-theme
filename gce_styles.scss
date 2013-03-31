@@ -5,6 +5,10 @@
  * @version 1.0
  */
 
+.gce-widget-list .gce-list .gce-list-event {
+    background: transparent;
+}
+
  ul.gce-list {
     .gce-list-title {
         font-size: 1.1em;
@@ -20,9 +24,7 @@
         }
     }
 
-    .gce-widget-list .gce-list .gce-list-event {
-        background: transparent;
-    }
+
 
     .description {
         white-space: pre-wrap; /* css-3 */    
