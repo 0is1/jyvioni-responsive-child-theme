@@ -14,8 +14,14 @@ ul.gce-list .gce-list-event {
     margin-top: 0.25em; }
 ul.gce-list .gce-widget-list .gce-list .gce-list-event {
   background: transparent; }
-ul.gce-list dl dt {
-  font-weight: bold;
-  color: gray; }
-ul.gce-list dl dd {
-  color: black; }
+ul.gce-list .description {
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */ }
