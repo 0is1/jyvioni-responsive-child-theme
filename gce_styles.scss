@@ -63,13 +63,16 @@
             white-space: -pre-wrap; /* Opera 4-6 */    
             white-space: -o-pre-wrap; /* Opera 7 */    
             word-wrap: break-word; /* Internet Explorer 5.5+ */
+            span {
+                background-image: url('icons/info_8x16.png');
+                background-repeat: no-repeat;
+                background-position: middle left;
+                padding-left: 20px;
+            }
         }
 
         .more a {
-            background-image: url('icons/info_8x16.png');
-            background-repeat: no-repeat;
-            background-position: middle left;
-            padding-left: 20px;
+               
         }
     }
 }
