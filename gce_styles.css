@@ -5,13 +5,15 @@
  * @version 1.0
  */
 ul.gce-list .gce-list-title {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-top: 1em; }
 ul.gce-list .gce-list-event {
   background: transparent; }
   ul.gce-list .gce-list-event h2.event-title {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-top: 0.25em; }
+ul.gce-list .gce-widget-list .gce-list .gce-list-event {
+  background: transparent; }
 ul.gce-list dl dt {
   font-weight: bold;
   color: gray; }
