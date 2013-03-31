@@ -1,0 +1,23 @@
+/**
+ * Custom styles for Google Calendar Events plugin (http://wordpress.org/extend/plugins/google-calendar-events/)
+ *
+ * @author Ville Korhonen <ville@xd.fi>
+ * @version 1.0
+ */
+
+ ul.gce-list {
+    .description {
+        display: none;
+    }
+
+    dl {
+        dt {
+            font-weight: bold;
+            color: gray;
+        }
+
+        dd {
+            color: black;
+        }
+    }
+ }
