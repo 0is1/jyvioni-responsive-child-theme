@@ -4,8 +4,14 @@
  * @author Ville Korhonen <ville@xd.fi>
  * @version 1.0
  */
-ul.gce-list .description {
-  display: none; }
+ul.gce-list .gce-list-title {
+  font-size: 1.5em;
+  margin-top: 1em; }
+ul.gce-list .gce-list-event {
+  background: transparent; }
+  ul.gce-list .gce-list-event h2.event-title {
+    font-size: 1.2em;
+    margin-top: 0.25em; }
 ul.gce-list dl dt {
   font-weight: bold;
   color: gray; }

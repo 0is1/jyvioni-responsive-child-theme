@@ -6,8 +6,18 @@
  */
 
  ul.gce-list {
-    .description {
-        display: none;
+    .gce-list-title {
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+
+    .gce-list-event {
+        background: transparent;
+
+        h2.event-title {
+            font-size: 1.2em;
+            margin-top: 0.25em;
+        }
     }
 
     dl {
