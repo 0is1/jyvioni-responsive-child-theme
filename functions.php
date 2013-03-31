@@ -9,3 +9,8 @@ if ( !defined('ABSPATH')) exit;
  *
  * load the theme function files
  */
+// add a favicon
+function blog_favicon() {
+    echo '<link rel="shortcut icon" type="image/png" href="' . echo get_stylesheet_directory_uri() . '/images/favicon.png" />';
+}
+add_action('wp_head', 'blog_favicon');
