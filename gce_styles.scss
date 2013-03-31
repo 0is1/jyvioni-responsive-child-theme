@@ -12,6 +12,14 @@
     }
 
     ul.gce-list {
+        .small {
+            font-size: 0.75em;
+        }
+
+        .quiet {
+            color: gray;
+        }
+
         span {
             color: black;
         }

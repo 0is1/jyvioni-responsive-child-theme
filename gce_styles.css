@@ -6,6 +6,10 @@
  */
 #widgets .gce-widget-list .gce-list .gce-list-event {
   background: transparent; }
+#widgets ul.gce-list .small {
+  font-size: 0.75em; }
+#widgets ul.gce-list .quiet {
+  color: gray; }
 #widgets ul.gce-list span {
   color: black; }
 #widgets ul.gce-list .gce-list-title {
