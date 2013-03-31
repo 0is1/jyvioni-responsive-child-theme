@@ -44,6 +44,11 @@
             background-repeat: no-repeat;
             background-position: middle left;
             padding-left: 20px;
+
+            span {
+                background: none;
+                padding: 0;
+            }
         }
 
         .event-location span {

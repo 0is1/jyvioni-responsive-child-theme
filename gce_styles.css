@@ -26,6 +26,9 @@
   background-repeat: no-repeat;
   background-position: middle left;
   padding-left: 20px; }
+  #widgets ul.gce-list .event-time span span {
+    background: none;
+    padding: 0; }
 #widgets ul.gce-list .event-location span {
   background-image: url("icons/home_16x16.png");
   background-repeat: no-repeat;
