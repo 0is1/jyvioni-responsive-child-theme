@@ -50,17 +50,17 @@ Current web hosting provider doesn't support git, so we use GitHub's SVN access 
 ```
 
 ### Update files
+Current webhost has script to ease update: (run in local terminal)
+```
+ssh -t jyvioni@jyvioni.org ./update-theme.sh
+```
+
+Longer way to achieve same results:
 ```
  $ cd wp-content/themes/_sources/jrct
  $ svn up
 ```
 
-### Switch source (use another GitHub repo as source)
-```
- $ cd wp-content/themes/_sources/jrct
- $ svn switch --relocate `svn info |grep ^URL: |cut -d" " -f2` https://github.com/new/repo_url
- $ svn up
-```
 
 ## Misc
 * based on [Responsive](http://themeid.com/responsive-theme/) [WordPress theme](http://wordpress.org/extend/themes/responsive)
