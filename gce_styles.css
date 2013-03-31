@@ -10,7 +10,8 @@
   color: black; }
 #widgets ul.gce-list .gce-list-title {
   font-size: 1.1em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  color: gray; }
 #widgets ul.gce-list .gce-list-event {
   background: transparent; }
   #widgets ul.gce-list .gce-list-event h2.event-title {
@@ -22,7 +23,7 @@
   background-position: middle left;
   padding-left: 20px; }
 #widgets ul.gce-list .event-location span {
-  background-image: url("icons/fullscreen_exit_16x16.png");
+  background-image: url("icons/home_16x16.png");
   background-repeat: no-repeat;
   background-position: middle left;
   padding-left: 20px; }
