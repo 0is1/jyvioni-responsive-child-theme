@@ -15,6 +15,11 @@ ul.gce-list .gce-list-event {
   ul.gce-list .gce-list-event h2.event-title {
     font-size: 1.4em;
     margin-top: 0.25em; }
+ul.gce-list .event-time span {
+  background-image: url("icons/clock_16x16.png");
+  background-repeat: no-repeat;
+  background-position: middle left;
+  padding-left: 20px; }
 ul.gce-list .description {
   white-space: pre-wrap;
   /* css-3 */
@@ -26,3 +31,8 @@ ul.gce-list .description {
   /* Opera 7 */
   word-wrap: break-word;
   /* Internet Explorer 5.5+ */ }
+ul.gce-list .more a {
+  background-image: url("icons/info_8x16.png");
+  background-repeat: no-repeat;
+  background-position: middle left;
+  padding-left: 20px; }
