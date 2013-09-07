@@ -15,20 +15,13 @@ There's Facebook-plugin in use (https://github.com/facebook/wordpress). With tha
 
 ## TODO
 
-### Google Calendar
-* Show event details as tooltip on :hover
-
-### "Liity jäseneksi" -image
-* Redesign
-* Reposition
-
 ### Footer
 * ViNO- and KSV-logos
 * Short description about Jyvioni
 * Maybe full sitemap
 
 ### Social share stuff
-* Twitter
+* Twitter (done)
 * Google+ (?)
 * Something...
 
