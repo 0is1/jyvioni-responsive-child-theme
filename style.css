@@ -125,7 +125,6 @@ a {
   background-image: -ms-linear-gradient(top, #d1bf00, #d1ac00);
   background-image: -o-linear-gradient(top, #d1bf00, #d1ac00);
   background-image: linear-gradient(top, #d1bf00, #d1ac00);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#d1bf00, endColorstr=#d1ac00);
 }
 .menu li li a:hover{
   text-shadow: none;
@@ -137,19 +136,35 @@ a {
 /* =Featured content
 -------------------------------------------------------------- */
 #featured {
-  background-color: #E3FFC5;
-  background-color: rgba(227, 255, 197, 0.9);
-  padding-bottom: 20px;
+  background: url(images/jyvioni-cover.png) no-repeat center center transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+}
+#featured .content-wrap{
+  background-color: rgba(227, 255, 197, 0.7);
 }
 #featured p{
   margin: 0;
   padding: 0 20px 0 40px;
   text-align: left;
 }
-#featured .main-join{
+.main-join{
   display: block;
   padding: 1em 0 0;
   text-align: center;
+}
+.main-join a img{
+  border: 5px solid transparent;
+  border-radius: 100%;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+}
+.main-join a img:hover{
+  border: 5px solid rgb(209, 191, 0);
 }
 #featured .fb-social-plugin{
   padding: 0 20px 0 40px;
@@ -163,6 +178,7 @@ a {
 .widget-wrapper {
  background-color: #FAF9F4;
  background-color: rgba(250, 249, 244, 0.9);
+ word-wrap: break-word;
 }
 .home-widgets ul{
   list-style: none;
@@ -193,6 +209,11 @@ width: 60%;
 }
 .infotable tr td:nth-child(2) {
 width: 30%;
+}
+
+/* Facebook-plugin overrides */
+#wrapper .fb_iframe_widget{
+  display: block;
 }
 
 /* Media Print
@@ -241,7 +262,7 @@ width: 30%;
     }
 
   .home #widgets {
-    margin-top: 40px;
+    margin-top: 0;
   }
 
     .top-widget,
