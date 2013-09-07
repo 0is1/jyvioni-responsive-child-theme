@@ -16,7 +16,6 @@ There's Facebook-plugin in use (https://github.com/facebook/wordpress). With tha
 ## TODO
 
 ### Footer
-* ViNO- and KSV-logos
 * Short description about Jyvioni
 * Maybe full sitemap
 
