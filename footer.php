@@ -101,6 +101,15 @@ if ( !defined('ABSPATH')) exit;
          ?>
          </div><!-- end of col-380 fit -->
 
+         <div class="grid col-940 footer-images">
+          <a class="vino" title="ViNO - Vihreiden nuorten ja opiskelijoiden liitto ry" href="http://www.vino.fi">
+          <?php echo '<img src="' . get_stylesheet_directory_uri() . '/images/vino-logo.png" />';?>
+          </a>
+          <a class="ksv" title="Keski-Suomen Vihreät ry" href="http://www.keskisuomenvihreat.fi">
+            <?php echo '<img src="' . get_stylesheet_directory_uri() . '/images/ksv.png" />';?>
+          </a>
+        </div>
+
          </div><!-- end of col-940 -->
          <?php get_sidebar('colophon'); ?>
 
@@ -119,7 +128,6 @@ if ( !defined('ABSPATH')) exit;
              <a href="<?php echo esc_url(__('http://wordpress.org/','responsive')); ?>" title="<?php esc_attr_e('WordPress', 'responsive'); ?>">
                     <?php printf('WordPress'); ?></a>
         </div><!-- end .powered -->
-
     </div><!-- end #footer-wrapper -->
 
 </div><!-- end #footer -->
