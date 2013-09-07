@@ -142,6 +142,7 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  border: none;
   padding: 0;
 }
 #featured .content-wrap{
