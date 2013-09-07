@@ -9,7 +9,6 @@ if ( !defined('ABSPATH')) exit;
  *
  * @file           header.php
  * @package        Responsive
- * @subpackage     Jyvioni-2013
  * @author         Emil Uzelac
  * @copyright      2003 - 2013 ThemeID
  * @license        license.txt
@@ -28,26 +27,12 @@ if ( !defined('ABSPATH')) exit;
 <head>
 
 <meta charset="<?php bloginfo('charset'); ?>" />
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-<?php
-if ( defined( 'WPSEO_VERSION' ) ) {
-    // WordPress SEO is activated
-        wp_title();
-
-} else {
-
-    // WordPress SEO is not activated
-  wp_title( '&#124;', true, 'right' );
-}
-?>
-</title>
+<title><?php wp_title('&#124;', true, 'right'); ?></title>
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-<?php wp_enqueue_style('responsive-style', get_stylesheet_uri(), false, '1.0.0');?>
 <link href="http://fonts.googleapis.com/css?family=Asap&subset=latin" rel="stylesheet" type="text/css">
 <?php wp_head(); ?>
 </head>
@@ -59,6 +44,8 @@ if ( defined( 'WPSEO_VERSION' ) ) {
 
     <?php responsive_header(); // before header hook ?>
     <div id="header">
+
+    <?php responsive_header_top(); // before header content hook ?>
 
         <?php if (has_nav_menu('top-menu', 'responsive')) { ?>
           <?php wp_nav_menu(array(
@@ -75,7 +62,7 @@ if ( defined( 'WPSEO_VERSION' ) ) {
   <?php if ( get_header_image() != '' ) : ?>
 
         <div id="logo">
-            <a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"><img src="<?php header_image(); ?>" width="<?php if(function_exists('get_custom_header')) { echo get_custom_header() -> width;} else { echo HEADER_IMAGE_WIDTH;} ?>" height="<?php if(function_exists('get_custom_header')) { echo get_custom_header() -> height;} else { echo HEADER_IMAGE_HEIGHT;} ?>" alt="<?php bloginfo('name'); ?>" /></a>
+            <a href="<?php echo home_url('/'); ?>"><img src="<?php header_image(); ?>" width="<?php if(function_exists('get_custom_header')) { echo get_custom_header() -> width;} else { echo HEADER_IMAGE_WIDTH;} ?>" height="<?php if(function_exists('get_custom_header')) { echo get_custom_header() -> height;} else { echo HEADER_IMAGE_HEIGHT;} ?>" alt="<?php bloginfo('name'); ?>" /></a>
         </div><!-- end of #logo -->
 
     <?php endif; // header image was removed ?>
@@ -90,10 +77,11 @@ if ( defined( 'WPSEO_VERSION' ) ) {
     <?php endif; // header image was removed (again) ?>
 
     <?php get_sidebar('top'); ?>
-
         <?php wp_nav_menu(array(
-            'container'       => '',
-          'theme_location'  => 'header-menu')
+            'container'       => 'div',
+            'container_class' => 'main-nav',
+            'fallback_cb'   =>  'responsive_fallback_menu',
+            'theme_location'  => 'header-menu')
           );
         ?>
 
@@ -106,13 +94,12 @@ if ( defined( 'WPSEO_VERSION' ) ) {
         ?>
             <?php } ?>
 
+      <?php responsive_header_bottom(); // after header content hook ?>
+
     </div><!-- end of #header -->
-    <?php responsive_header_end(); // after header hook ?>
+    <?php responsive_header_end(); // after header container hook ?>
 
-  <?php responsive_wrapper(); // before wrapper ?>
+  <?php responsive_wrapper(); // before wrapper container hook ?>
     <div id="wrapper" class="clearfix">
+    <?php responsive_wrapper_top(); // before wrapper content hook ?>
     <?php responsive_in_wrapper(); // wrapper hook ?>
-
-
-
-
