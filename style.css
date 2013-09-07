@@ -117,7 +117,8 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#d1bf00, endColorstr=#d1ac00);
   text-shadow: 0 -1px 1px rgba(10,10,10,0.5);
 }
-.menu .current_page_item a, .menu .current-menu-item a, .menu li:hover > a{
+.front-page  .menu .current_page_item a, .menu .current-menu-item a, .menu li:hover > a,
+.js .main-nav{
   background-color: #d1bf00;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d1bf00), to(#d1ac00));
   background-image: -webkit-linear-gradient(top, #d1bf00, #d1ac00);
