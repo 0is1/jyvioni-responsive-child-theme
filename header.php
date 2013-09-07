@@ -47,7 +47,7 @@ if ( defined( 'WPSEO_VERSION' ) ) {
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<?php wp_enqueue_style('responsive-style', get_stylesheet_uri(), false, '1.8.9');?>
+<?php wp_enqueue_style('responsive-style', get_stylesheet_uri(), false, '1.0.0');?>
 <link href="http://fonts.googleapis.com/css?family=Asap&subset=latin" rel="stylesheet" type="text/css">
 <?php wp_head(); ?>
 </head>
