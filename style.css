@@ -74,6 +74,7 @@ a {
   padding: 0 2%;
 }
 #footer{
+  font-size: .8rem;
   max-width: none;
   padding: 2% 4%;
 }
@@ -81,20 +82,44 @@ a {
   margin: 0 auto;
   max-width: 1200px;
 }
-.footer-images a{
-  display: inline-block;
-  margin:0 10px 10px 0;
-}
-.ksv{
-  background-color: #61bf1a;
-}
 .social-icons a{
   position: relative;
 }
 .social-icons img:hover{
   margin-top: -5px;
 }
-
+.footer-images a{
+  border-bottom: 3px solid transparent;
+  display: inline-block;
+  margin:0 10px 10px 0;
+}
+.footer-images a:hover{
+  border-bottom: 3px solid #d1bf00;
+}
+.footer-images .ksv{
+  background-color: #61bf1a;
+}
+#footer #footer-wrapper .jyvioni-info {
+  background-color: white;
+  background-color: rgba(250,249,244,0.5);
+  border: 1px solid #61bf1a;
+  -webkit-box-shadow:2px 2px 5px rgba(40,40,40,0.25), -2px -2px 5px rgba(40,40,40,0.25);
+  box-shadow: 2px 2px 5px rgba(40,40,40,0.25), -2px -2px 5px rgba(40,40,40,0.25);
+  margin-bottom: 2%;
+  padding: .5rem;
+}
+.jyvioni-info h3 {
+  font-size: 1.2rem;
+}
+.jyvioni-info h3, .jyvioni-info p, .powered p{
+  margin: 1rem;
+}
+#footer .jyvioni-info a{
+  color: rgb(0, 180, 45);
+}
+.powered{
+  margin-bottom: 0;
+}
 /* =Header Menu (Primary)
 -------------------------------------------------------------- */
 .menu {
@@ -298,66 +323,59 @@ width: 30%;
       margin: 0;
       text-align: center;
     }
-
     .grid,
-  .grid-right {
+    .grid-right {
       float: none;
     }
-
+    td{
+      display: block;
+    }
+    input{
+      width: 100%;
+    }
   #featured-image .fluid-width-video-wrapper {
-      margin: 20px 0 0 0;
+    margin: 20px 0 0 0;
     }
-
     .top-widget {
-        float: none;
-        margin: 0 auto 10px auto;
-        position: relative;
-        text-align: center;
-        width: auto;
+      float: none;
+      margin: 0 auto 10px auto;
+      position: relative;
+      text-align: center;
+      width: auto;
     }
-
     .top-widget .widget-title {
-        text-align: center;
+      text-align: center;
     }
-
     .js .menu,
-  .js .sub-header-menu {
-    display: none;
-  }
-
-  .top-menu,
-  .footer-menu li {
+    .js .sub-header-menu {
+      display: none;
+    }
+    .top-menu,
+    .footer-menu li {
       float: none;
         font-size: 11px;
       text-align: center;
     }
-
-  .tinynav {
-        display: block;
+    .tinynav {
+      display: block;
     }
-
     .sb-holder {
-        display: block;
+      display: block;
     }
-
     #author-meta {
-        padding: 20px;
+      padding: 20px;
     }
-
     .hide-650 {
-        display: none;
+      display: none;
     }
-
     .show-650 {
-        display: block;
+      display: block;
     }
-
     #footer {
       text-align: center;
     }
-
     #footer .social-icons {
-        padding-bottom: 10px;
+      padding-bottom: 10px;
       text-align: center;
     }
 }
