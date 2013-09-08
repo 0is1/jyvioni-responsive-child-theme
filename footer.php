@@ -109,7 +109,10 @@ if ( !defined('ABSPATH')) exit;
             <?php echo '<img src="' . get_stylesheet_directory_uri() . '/images/ksv.png" />';?>
           </a>
         </div>
-
+        <div class="grid col-940 jyvioni-info">
+          <h3>Jyvioni eli Jyväskylän vihreät nuoret ja opiskelijat ry</h3>
+          <p>Jyvioni on sekä poliittinen järjestö että kansalaisjärjestö. Vaikutamme niin kunnallis- kuin opiskelijapolitiikassakin ja aina valtakunnallisella tasolla saakka. Toimintamme tavoitteena on edistää omalta osaltamme ihmisen ja muun luonnon rauhanomaista rinnakkaiseloa, yhteiskunnallista oikeudenmukaisuutta ja yhdenvertaisuutta sekä globaalia solidaarisuutta. <a href="/tule-mukaan">Tule mukaan toimimaan kanssamme paremman maailman puolesta!</a></p>
+        </div>
          </div><!-- end of col-940 -->
          <?php get_sidebar('colophon'); ?>
 
@@ -122,11 +125,12 @@ if ( !defined('ABSPATH')) exit;
         <div class="grid col-300 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'responsive' ); ?>"><?php _e( '&uarr;', 'responsive' ); ?></a></div>
 
         <div class="grid col-300 fit powered">
-            <?php printf('Kiitos: ') ?>
-            <a href="<?php echo esc_url(__('http://themeid.com/responsive-theme/','responsive')); ?>" title="<?php esc_attr_e('Responsive Theme', 'responsive'); ?>">
-                    <?php printf('Responsive Theme'); ?></a><?php printf(' ja') ?>
-             <a href="<?php echo esc_url(__('http://wordpress.org/','responsive')); ?>" title="<?php esc_attr_e('WordPress', 'responsive'); ?>">
-                    <?php printf('WordPress'); ?></a>
+          <?php printf('Kiitos: ') ?>
+          <a href="<?php echo esc_url(__('http://themeid.com/responsive-theme/','responsive')); ?>" title="<?php esc_attr_e('Responsive Theme', 'responsive'); ?>">
+          <?php printf('Responsive Theme'); ?></a><?php printf(' ja') ?>
+           <a href="<?php echo esc_url(__('http://wordpress.org/','responsive')); ?>" title="<?php esc_attr_e('WordPress', 'responsive'); ?>">
+          <?php printf('WordPress'); ?></a>
+          <p>Sivuston toteutus: <a href="http://jannejuhani.net">Janne</a> ja <a href="http://ypcs.fi">Ville</a></p>
         </div><!-- end .powered -->
     </div><!-- end #footer-wrapper -->
 
