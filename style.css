@@ -165,6 +165,12 @@ a {
   background-image: -o-linear-gradient(top, #d1bf00, #d1ac00);
   background-image: linear-gradient(top, #d1bf00, #d1ac00);
 }
+.menu li li{
+  padding: .5rem;
+}
+.menu li li a{
+  line-height: 1;
+}
 .menu li li a:hover{
   text-shadow: none;
 }
