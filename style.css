@@ -36,6 +36,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* =Globals
 -------------------------------------------------------------- */
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 html, body{
   overflow-x: hidden;
 }
@@ -43,6 +48,7 @@ body{
   background: url(images/jyvioni-bg.png) 0 0 repeat;
   color: #3A3A3A;
   font-family: "Asap", "Arial", sans-serif;
+  overflow-y: hidden;
 }
 #container {
   max-width: 1200px;
