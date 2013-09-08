@@ -16,11 +16,11 @@ There's Facebook-plugin in use (https://github.com/facebook/wordpress). With tha
 ## TODO
 
 ### Footer
-* Short description about Jyvioni
-* Maybe full sitemap
+* Maybe full sitemap (maybe not)
 
 ### Social share stuff
 * Twitter (done)
+* RSS (done)
 * Google+ (?)
 * Something...
 
