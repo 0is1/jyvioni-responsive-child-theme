@@ -1,52 +1,30 @@
 /*
-Theme Name: Jyvioni-2013
-Theme URI: http://jyvioni.org
-Description: Jyvioni-2013 is a customized version of Responsive Theme.
+ * Theme Name: Jyvioni-2013
+ * Description: Child theme for Travelify
+ * Theme URI: http://jyvioni.org
+ * Author: Janne Saarela
+ * Template: responsive
+ * Version 0.1.0
+ * Copyright 2013. GPL2licensed. */
 
-Template: responsive
-Version: 1.0.0
-Author: ThemeID
-Author URI: http://themeid.com
-Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, flexible-width, rtl-language-support
-
-License: GNU General Public License
-License URI: license.txt
-
-Responsive WordPress Theme, Copyright (C) 2003-2012 Emil Uzelac
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
-/* =Import Styles
--------------------------------------------------------------- */
-@import url('../responsive/style.css');
-
-
-
+@import url("../responsive/style.css");
 /* =Globals
 -------------------------------------------------------------- */
-*{
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-html, body{
+html,
+body {
   overflow-x: hidden;
 }
-body{
-  background: url(images/jyvioni-bg.png) 0 0 repeat;
-  color: #3A3A3A;
+body {
+  background: url("images/jyvioni-bg.png") 0 0 repeat;
+  color: #3a3a3a;
   font-family: "Asap", "Arial", sans-serif;
   overflow-y: hidden;
 }
@@ -54,11 +32,11 @@ body{
   max-width: 1200px;
   padding: 0px 2%;
 }
-#wrapper{
-  background-color: white;
+#wrapper {
+  background-color: #fff;
   background-color: rgba(255,255,255,0.8);
 }
-.home #wrapper{
+.home #wrapper {
   background-color: transparent;
   border: none;
   margin: 20px auto;
@@ -67,334 +45,318 @@ body{
 /* =Links
 -------------------------------------------------------------- */
 a {
-  color: #0187C5;
+  color: #0187c5;
 }
-
 /* =Header Footer theme-styles
 -------------------------------------------------------------- */
-#header, #footer{
-  background-color: #FAF9F4;
+#header,
+#footer {
+  background-color: #faf9f4;
   background-color: rgba(250,249,244,0.5);
 }
-#logo{
+#logo {
   padding: 0 2%;
 }
-#footer{
-  font-size: .8rem;
+#footer {
+  font-size: 0.8rem;
   max-width: none;
   padding: 2% 4%;
 }
-#footer-wrapper{
+#footer #footer-wrapper .jyvioni-info {
+  background-color: #fff;
+  background-color: rgba(250,249,244,0.5);
+  border: 1px solid #61bf1a;
+  -webkit-box-shadow: 2px 2px 5px rgba(40,40,40,0.25), -2px -2px 5px rgba(40,40,40,0.25);
+  box-shadow: 2px 2px 5px rgba(40,40,40,0.25), -2px -2px 5px rgba(40,40,40,0.25);
+  margin-bottom: 2%;
+  padding: 0.5rem;
+}
+#footer .jyvioni-info a {
+  color: #00b42d;
+}
+#footer-wrapper {
   margin: 0 auto;
   max-width: 1200px;
 }
-.social-icons a{
+.social-icons a {
   position: relative;
 }
-.social-icons img:hover{
+.social-icons img:hover {
   margin-top: -5px;
 }
-.footer-images a{
+.footer-images a {
   border-bottom: 3px solid transparent;
   display: inline-block;
-  margin:0 10px 10px 0;
+  margin: 0 10px 10px 0;
 }
-.footer-images a:hover{
+.footer-images a:hover {
   border-bottom: 3px solid #d1bf00;
 }
-.footer-images .ksv{
+.footer-images .ksv {
   background-color: #61bf1a;
-}
-#footer #footer-wrapper .jyvioni-info {
-  background-color: white;
-  background-color: rgba(250,249,244,0.5);
-  border: 1px solid #61bf1a;
-  -webkit-box-shadow:2px 2px 5px rgba(40,40,40,0.25), -2px -2px 5px rgba(40,40,40,0.25);
-  box-shadow: 2px 2px 5px rgba(40,40,40,0.25), -2px -2px 5px rgba(40,40,40,0.25);
-  margin-bottom: 2%;
-  padding: .5rem;
 }
 .jyvioni-info h3 {
   font-size: 1.2rem;
 }
-.jyvioni-info h3, .jyvioni-info p, .powered p{
+.jyvioni-info h3,
+.jyvioni-info p,
+.powered p {
   margin: 1rem;
 }
-#footer .jyvioni-info a{
-  color: rgb(0, 180, 45);
-}
-.powered{
+.powered {
   margin-bottom: 0;
 }
 /* =Header Menu (Primary)
 -------------------------------------------------------------- */
 .menu {
   background-color: #5fa532;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5fa532), to(#7ac04b));
   background-image: -webkit-linear-gradient(top, #5fa532, #7ac04b);
   background-image: -moz-linear-gradient(top, #5fa532, #7ac04b);
-  background-image: -ms-linear-gradient(top, #5fa532, #7ac04b);
   background-image: -o-linear-gradient(top, #5fa532, #7ac04b);
-  background-image: linear-gradient(top, #5fa532, #7ac04b);
+  background-image: -ms-linear-gradient(top, #5fa532, #7ac04b);
+  background-image: linear-gradient(to bottom, #5fa532, #7ac04b);
   clear: both;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#5fa532, endColorstr=#7ac04b);
   margin: 0 auto;
-}
-.menu a, .sb-selector:link, .sb-selector:visited, .sb-selector:hover{
-  text-shadow: 0 -1px 1px rgba(100,100,100,0.5);
 }
 .menu a:hover {
   background-color: #d1bf00;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d1bf00), to(#d1ac00));
   background-image: -webkit-linear-gradient(top, #d1bf00, #d1ac00);
   background-image: -moz-linear-gradient(top, #d1bf00, #d1ac00);
-  background-image: -ms-linear-gradient(top, #d1bf00, #d1ac00);
   background-image: -o-linear-gradient(top, #d1bf00, #d1ac00);
-  background-image: linear-gradient(top, #d1bf00, #d1ac00);
+  background-image: -ms-linear-gradient(top, #d1bf00, #d1ac00);
+  background-image: linear-gradient(to bottom, #d1bf00, #d1ac00);
   color: #fff;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#d1bf00, endColorstr=#d1ac00);
   text-shadow: 0 -1px 1px rgba(10,10,10,0.5);
 }
-.front-page  .menu .current_page_item a, .menu .current-menu-item a, .menu li:hover > a,
-.js .main-nav{
-  background-color: #d1bf00;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d1bf00), to(#d1ac00));
-  background-image: -webkit-linear-gradient(top, #d1bf00, #d1ac00);
-  background-image: -moz-linear-gradient(top, #d1bf00, #d1ac00);
-  background-image: -ms-linear-gradient(top, #d1bf00, #d1ac00);
-  background-image: -o-linear-gradient(top, #d1bf00, #d1ac00);
-  background-image: linear-gradient(top, #d1bf00, #d1ac00);
+.menu li li {
+  padding: 0.5rem;
 }
-.menu li li{
-  padding: .5rem;
-}
-.menu li li a{
+.menu li li a {
   line-height: 1;
 }
-.menu li li a:hover{
+.menu li li a:hover {
   text-shadow: none;
 }
-.sb-holder{
+.menu a,
+.sb-selector:link,
+.sb-selector:visited,
+.sb-selector:hover {
+  text-shadow: 0 -1px 1px rgba(100,100,100,0.5);
+}
+.front-page  .menu .current_page_item a,
+.menu .current-menu-item a,
+.menu li:hover > a,
+.js .main-nav {
+  background-color: #d1bf00;
+  background-image: -webkit-linear-gradient(top, #d1bf00, #d1ac00);
+  background-image: -moz-linear-gradient(top, #d1bf00, #d1ac00);
+  background-image: -o-linear-gradient(top, #d1bf00, #d1ac00);
+  background-image: -ms-linear-gradient(top, #d1bf00, #d1ac00);
+  background-image: linear-gradient(to bottom, #d1bf00, #d1ac00);
+}
+.sb-holder {
   background-color: #5fa532;
 }
-
 /* =Featured content
 -------------------------------------------------------------- */
 #featured {
-  background: url(images/jyvioni-cover.png) no-repeat center center transparent;
+  background: url("images/jyvioni-cover.png") no-repeat center center transparent;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   border: none;
   padding: 0;
 }
-#featured .content-wrap{
-  background-color: rgba(227, 255, 197, 0.8);
+#featured .content-wrap {
+  background-color: rgba(227,255,197,0.8);
 }
-#featured p{
+#featured p {
   margin: 0;
   padding: 0 20px 0 40px;
   text-align: left;
 }
-.main-join{
+#featured .fb-social-plugin {
+  padding: 0 20px 0 40px;
+}
+.main-join {
   display: block;
   padding: 1em 0 0;
   text-align: center;
 }
-.main-join a img{
+.main-join a img {
   border: 5px solid transparent;
+  -webkit-border-radius: 100%;
   border-radius: 100%;
   display: inline-block;
   height: 150px;
   width: 150px;
 }
-.main-join a img:hover{
-  border: 5px solid rgb(209, 191, 0);
+.main-join a img:hover {
+  border: 5px solid #d1bf00;
 }
-#featured .fb-social-plugin{
-  padding: 0 20px 0 40px;
-}
-#content-search #s{
+#content-search #s {
   width: 66.667%;
 }
-
 /* =Widgets
 -------------------------------------------------------------- */
 .widget-wrapper {
- background-color: #FAF9F4;
- background-color: rgba(250, 249, 244, 0.9);
- word-wrap: break-word;
+  background-color: #faf9f4;
+  background-color: rgba(250,249,244,0.9);
+  word-wrap: break-word;
 }
-.home-widgets ul{
+.home-widgets ul {
   list-style: none;
 }
-.fb_iframe_widget span, .fb_iframe_widget iframe{
+.fb_iframe_widget span,
+.fb_iframe_widget iframe {
   width: 100% !important;
 }
 /* =Navigation
 -------------------------------------------------------------- */
-
 .navigation a {
   color: #4a4a4a;
 }
-
 /* =Tables
 -------------------------------------------------------------- */
-th, td, table{
-  border-bottom: 1px solid rgb(221, 221, 221);
+th,
+td,
+table {
+  border-bottom: 1px solid #ddd;
 }
-.infotable{
+.infotable {
   border: none;
 }
 .infotable tr {
-border-top: 1px solid #DDD;
+  border-top: 1px solid #ddd;
 }
 .infotable tr td {
-border: none;
-float: left;
-padding: 2%;
-width: 60%;
+  border: none;
+  float: left;
+  padding: 2%;
+  width: 60%;
 }
 .infotable tr td:nth-child(2) {
-width: 30%;
+  width: 30%;
 }
-
 /* Facebook-plugin overrides */
-#wrapper .fb_iframe_widget{
+#wrapper .fb_iframe_widget {
   display: block;
 }
-
 /* Media Print
 -------------------------------------------------------------- */
 @media print {
-
-    h1 {
-      page-break-before: always;
-    }
-
-    h1,  h2,  h3,  h4,  h5,  h6 {
-      page-break-after: avoid;
-    }
-
-    ul,  ol,  dl {
-      page-break-before: avoid;
-    }
+  h1 {
+    pagebefore: always;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    pageafter: avoid;
+  }
+  ul,
+  ol,
+  dl {
+    pagebefore: avoid;
+  }
 }
-
 /*  Retina (HiDPI) Display
     http://www.quirksmode.org/blog/archives/2013/06/devicepixelrati.html
 -------------------------------------------------------------- */
-@media{
+/*@media
   only screen and (-moz-min-device-pixel-ratio:1.5),
   only screen and (-o-min-device-pixel-ratio:3/2),
   only screen and (-webkit-min-device-pixel-ratio:1.5),
-  only screen and (min-device-pixel-ratio:1.5) {
-
-    body {}
-  }
-}
-
+  only screen and (min-device-pixel-ratio:1.5)
+    body*/
 /* =Responsive (Mobile) Design
 -------------------------------------------------------------- */
 @media screen and (max-width: 980px) {
-
-    body {}
-
-    .grid,
+  .grid,
   .grid-right {
-      float: none;
-    }
-
+    float: none;
+  }
   #featured-image .fluid-width-video-wrapper {
-      margin: 20px 0 0 0;
-    }
-
+    margin: 20px 0 0 0;
+  }
   .home #widgets {
     margin-top: 0;
   }
-
-    .top-widget,
-    .home .top-widget {
-        margin-top: 0 !important;
-    }
-
-    .hide-980 {
-        display: none;
-    }
-
-    .show-980 {
-        display: block;
-    }
-
+  .top-widget,
+  .home .top-widget {
+    margin-top: 0 !important;
+  }
+  .hide-980 {
+    display: none;
+  }
+  .show-980 {
+    display: block;
+  }
 }
-
 @media screen and (max-width: 650px) {
-
-    body {}
-
-    #logo {
-      float: none;
-      margin: 0;
-      text-align: center;
-    }
-    .grid,
-    .grid-right {
-      float: none;
-    }
-    td{
-      display: block;
-    }
-    input{
-      width: 100%;
-    }
+  #logo {
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+  .grid,
+  .grid-right {
+    float: none;
+  }
+  td {
+    display: block;
+  }
+  input {
+    width: 100%;
+  }
   #featured-image .fluid-width-video-wrapper {
     margin: 20px 0 0 0;
-    }
-    .top-widget {
-      float: none;
-      margin: 0 auto 10px auto;
-      position: relative;
-      text-align: center;
-      width: auto;
-    }
-    .top-widget .widget-title {
-      text-align: center;
-    }
-    .js .menu,
-    .js .sub-header-menu {
-      display: none;
-    }
-    .top-menu,
-    .footer-menu li {
-      float: none;
-        font-size: 11px;
-      text-align: center;
-    }
-    .tinynav {
-      display: block;
-    }
-    .sb-holder {
-      display: block;
-    }
-    #author-meta {
-      padding: 20px;
-    }
-    .hide-650 {
-      display: none;
-    }
-    .show-650 {
-      display: block;
-    }
-    #footer {
-      text-align: center;
-    }
-    #footer .social-icons {
-      padding-bottom: 10px;
-      text-align: center;
-    }
+  }
+  .top-widget {
+    float: none;
+    margin: 0 auto 10px auto;
+    position: relative;
+    text-align: center;
+    width: auto;
+  }
+  .top-widget .widget-title {
+    text-align: center;
+  }
+  .js .menu,
+  .js .sub-header-menu {
+    display: none;
+  }
+  .top-menu,
+  .footer-menu li {
+    float: none;
+    font-size: 11px;
+    text-align: center;
+  }
+  .tinynav {
+    display: block;
+  }
+  .sb-holder {
+    display: block;
+  }
+  #author-meta {
+    padding: 20px;
+  }
+  .hide-650 {
+    display: none;
+  }
+  .show-650 {
+    display: block;
+  }
+  #footer {
+    text-align: center;
+  }
+  #footer .social-icons {
+    padding-bottom: 10px;
+    text-align: center;
+  }
 }
-
 @media screen and (max-width: 480px) {
   #logo {
     float: none;
@@ -402,14 +364,14 @@ width: 30%;
   }
   .grid,
   .grid-right {
-      float: none;
-    }
+    float: none;
+  }
   #featured-image .fluid-width-video-wrapper {
-      margin: 20px 0 0 0;
+    margin: 20px 0 0 0;
   }
   .featured-title {
     font-size: 40px;
-    padding: 40px 20px 0 20px
+    padding: 40px 20px 0 20px;
   }
   .featured-subtitle {
     font-size: 24px;
@@ -443,83 +405,62 @@ width: 30%;
     text-align: center;
   }
 }
-
 @media screen and (max-width: 320px) {
-
-    body {}
-
   #featured p {
-      font-size: 12px;
+    font-size: 12px;
     line-height: 1.5em;
-    }
-
-    .featured-title {
-      font-size: 35px;
-    }
-
+  }
+  .featured-title {
+    font-size: 35px;
+  }
   .featured-subtitle {
     font-size: 15px;
   }
-
-    .call-to-action a.button {
-      font-size: 14px;
-      padding: 7px 17px;
-    }
-
-    .hide-320 {
-        display: none;
-    }
-
-    .show-320 {
-        display: block;
-    }
+  .call-to-action a.button {
+    font-size: 14px;
+    padding: 7px 17px;
+  }
+  .hide-320 {
+    display: none;
+  }
+  .show-320 {
+    display: block;
+  }
 }
-
 @media screen and (max-width: 240px) {
-
-    body {}
-
   #featured p {
-      font-size: 11px;
+    font-size: 11px;
     line-height: 1.5em;
-    }
-
-    .featured-title {
-      font-size: 20px;
-    }
-
+  }
+  .featured-title {
+    font-size: 20px;
+  }
   .featured-subtitle {
     font-size: 11px;
   }
-
-    .call-to-action a.button {
-      font-size: 12px;
-      padding: 5px 15px;
-    }
-
-    .top-widget area,
-    .top-widget select,
-    .top-widget textarea,
-    .top-widget input[type="text"],
-    .top-widget input[type="password"] {
-        width: 75%;
-    }
-
-    .widget-title,
-    .widget-title-home h3 {
-        font-size: 14px;
-        height: 13px;
-        line-height: 13px;
-        text-align: left;
-    }
-
-    .hide-240 {
-        display: none;
-    }
-
-    .show-240 {
-        display: block;
-    }
+  .call-to-action a.button {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  .top-widget area,
+  .top-widget select,
+  .top-widget textarea,
+  .top-widget input[type="text"],
+  .top-widget input[type="password"] {
+    width: 75%;
+  }
+  .widget-title,
+  .widget-title-home h3 {
+    font-size: 14px;
+    height: 13px;
+    line-height: 13px;
+    text-align: left;
+  }
+  .hide-240 {
+    display: none;
+  }
+  .show-240 {
+    display: block;
+  }
 }
-
 /*The last 29 days of the month are the hardest."- Nikola Tesla
