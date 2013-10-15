@@ -263,13 +263,14 @@ table {
 .social-media-buttons {
   padding: 1% 0 0 0;
 }
-#wrapper .fb_iframe_widget {
+#wrapper .social-media-buttons .fb_iframe_widget {
+  display: inline-block;
   min-width: 100px;
 }
 .tweet-button {
   display: inline-block;
 }
-#widgets .fb_iframe_widget {
+#wrapper .fb_iframe_widget {
   display: block;
 }
 /* Media Print
