@@ -5,12 +5,6 @@ if ( !defined('ABSPATH')) exit;
 
 /**
  * Site Front Page
- *
- * Note: You can overwrite front-page.php as well as any other Template in Child Theme.
- * Create the same file (name) include in /responsive-child-theme/ and you're all set to go!
- * @see            http://codex.wordpress.org/Child_Themes and
- *                 http://themeid.com/forum/topic/505/child-theme-example/
- *
  * @file           front-page.php
  * @package        Responsive
  * @author         Emil Uzelac

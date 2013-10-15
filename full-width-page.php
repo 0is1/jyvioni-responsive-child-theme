@@ -6,7 +6,7 @@ if ( !defined('ABSPATH')) exit;
 /**
  * Full Content Template
  *
-   Template Name:  Full Width Page (no sidebar)
+ * Template Name:  Full Width Page (no sidebar)
  *
  * @file           full-width-page.php
  * @package        Responsive
@@ -22,7 +22,7 @@ if ( !defined('ABSPATH')) exit;
 ?>
 <?php get_header(); ?>
 
-        <div id="content-full" class="grid col-940">
+<div id="content-full" class="grid col-940">
 
 <?php if (have_posts()) : ?>
 
