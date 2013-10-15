@@ -4,8 +4,6 @@ Theme for jyvioni.org website. Based on responsive-theme by ThemeID http://theme
 This theme needs Responsive-theme as master theme to work.
 
 ## Plugins in use
-* flexible-posts-widget-jyvioni (https://github.com/0is1/flexible-posts-widget-jyvioni)
-  * Little "ad hoc" mod of flexible-posts-widget
 * google-calendar-events
 * wordpress (Facebook-plugin)
 * wp-jquery-lightbox
@@ -25,8 +23,25 @@ There's Facebook-plugin in use (https://github.com/facebook/wordpress). With tha
 * Something...
 
 ### Design
-* Site design is still work in progress
+* Site design is okay?
 
+## Grunt
+There's very basic grunt-file which have:
+
+* watch for "src/"-files (.js and .styl)
+* Stylus
+* js-uglify
+
+### Usage
+While development (watch)
+```
+grunt
+```
+
+When you want production version of .js and .css -files
+```
+grunt build
+```
 
 ## Updating theme on production server
 Current web hosting provider doesn't support git, so we use GitHub's SVN access support to keep theme up-to-date on server.
