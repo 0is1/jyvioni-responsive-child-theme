@@ -1,0 +1,18 @@
+{
+  "name": "jyvioni-2013-wp-theme",
+  "url": "http://jyvioni.org",
+  "author": "Janne Saarela",
+  "copyright": "2013",
+  "license": "GPL2",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-stylus": "~0.8.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "matchdep": "~0.1.2"
+  }
+}
