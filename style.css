@@ -258,7 +258,7 @@ table {
 }
 /* Social media */
 .social-media-buttons {
-  padding: 0 2%;
+  padding: 1% 0 0 0;
 }
 #wrapper .fb_iframe_widget {
   min-width: 100px;
