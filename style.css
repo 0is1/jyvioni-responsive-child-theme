@@ -257,6 +257,9 @@ table {
   width: 30%;
 }
 /* Social media */
+#featured .social-media-buttons {
+  padding: 1%;
+}
 .social-media-buttons {
   padding: 1% 0 0 0;
 }
