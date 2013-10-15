@@ -25,7 +25,6 @@ if ( !defined('ABSPATH')) exit;
 <?php responsive_container_end(); // after container hook ?>
 
 <div id="footer" class="clearfix">
-
     <div id="footer-wrapper">
 
         <div class="grid col-940">
@@ -137,5 +136,6 @@ if ( !defined('ABSPATH')) exit;
 </div><!-- end #footer -->
 
 <?php wp_footer(); ?>
+<?php do_action('add_tweet_button_script');?>
 </body>
 </html>
