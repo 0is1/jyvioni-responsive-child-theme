@@ -16,18 +16,21 @@ if ( !defined('ABSPATH')) exit;
 ?>
 <?php
   $query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 3));
-  if($query->have_posts()) :
-    while($query->have_posts()) : $query->the_post();
+  if($query->have_posts()) : ?>
+  <div class="news">
+    <h2 class="news-main-title"><?php _e('Uutiset', 'jyvioni-responsive-child-theme'); ?></h2>
+  <?php while($query->have_posts()) : $query->the_post();
     ?>
       <article class="post-<?php the_ID();?> grid-50-with-gap">
         <a href="<?php echo get_permalink(); ?>" title="<?php the_title() ?>">
-          <h1><?php the_title() ?></h1>
+          <h3><?php the_title() ?></h3>
           <div class='post-content'>
             <?php the_excerpt(); ?>
           </div>
         </a>
       </article>
   <?php
-    endwhile;
-  endif;
+    endwhile; ?>
+  </div>
+<?php endif;
 ?>
