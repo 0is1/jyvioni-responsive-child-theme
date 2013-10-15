@@ -32,10 +32,17 @@ if ( !defined('ABSPATH')) exit;
     <?php if ($options['breadcrumb'] == 0): ?>
     <?php echo responsive_breadcrumb_lists(); ?>
         <?php endif; ?>
-
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <h1 class="post-title"><?php the_title(); ?></h1>
                 <div class="post-entry">
+                  <div class="social-media-buttons">
+                    <?php
+                      $blog_title = get_bloginfo('name');
+                      $title = $blog_title .' – ' . the_title('','', false);
+                      do_action('create_like_button', get_permalink());
+                      do_action('add_tweet_button', get_permalink(), $title);
+                    ?>
+                  </div>
                     <?php the_content(__('Read more &#8250;', 'responsive')); ?>
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'responsive'), 'after' => '</div>')); ?>
                 </div><!-- end of .post-entry -->

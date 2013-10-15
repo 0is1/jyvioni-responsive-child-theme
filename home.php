@@ -69,7 +69,14 @@ if ( !defined('ABSPATH')) exit;
   		    echo '</p>';
   		  }
   	?>
-
+        <div class="social-media-buttons">
+        <?php
+          $blog_title = get_bloginfo('name');
+          $title = $blog_title .' – ' . the_title('','', false);
+          do_action('create_like_button', get_site_url());
+          do_action('add_tweet_button', get_site_url(), $title);
+        ?>
+        </div>
       </div><!-- end of .col-460 -->
 
       <div id="featured-image" class="grid col-460 fit">
