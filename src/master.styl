@@ -164,6 +164,24 @@ a
   #s
     width 66.667%
 
+/* =Home page news
+-------------------------------------------------------------- */
+#widgets
+  .news
+    h3
+      font-size 160%
+      margin 0 0 2%
+    .post-content
+      p
+        margin 0 0 2%
+    .read-more
+      a
+        min-width 70px
+        &:empty
+          display none
+.news-main-title
+  margin 0 0 2%
+
 /* =Widgets
 -------------------------------------------------------------- */
 .widget-wrapper
@@ -201,9 +219,14 @@ th, td, table
       &:nth-child(2)
         width 30%
 
-/* Facebook-plugin overrides */
+/* Social media */
+.social-media-buttons
+  padding 0 2%
+
 #wrapper .fb_iframe_widget
-  display block
+  min-width 100px
+.tweet-button
+  display inline-block
 
 /* Media Print
 -------------------------------------------------------------- */
