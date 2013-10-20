@@ -33,6 +33,11 @@ There's very basic grunt-file which have:
 * js-uglify
 
 ### Usage
+Install npm-packages (npm [Node Package Manager] needs to be installed in your system)
+```
+npm install
+```
+
 While development (watch)
 ```
 grunt
