@@ -72,7 +72,7 @@ if ( !defined('ABSPATH')) exit;
         <div class="social-media-buttons">
         <?php
           $blog_title = get_bloginfo('name');
-          $title = $blog_title .' – ' . the_title('','', false);
+          $title = $blog_title .' – ' . get_bloginfo('description');
           do_action('create_like_button', get_site_url());
           do_action('add_tweet_button', get_site_url(), $title);
         ?>
