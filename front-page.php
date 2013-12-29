@@ -89,7 +89,6 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
 				</div><!-- end of .call-to-action -->
 
 			<?php endif; ?>
-
 		</div><!-- end of .col-460 -->
 
 		<div id="featured-image" class="grid col-460 fit">
