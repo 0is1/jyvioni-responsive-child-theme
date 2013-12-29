@@ -1,7 +1,7 @@
 # Jyvioni-responsive-child-theme
 
 Theme for jyvioni.org website. Based on responsive-theme by ThemeID http://themeid.com/responsive-theme/
-This theme needs Responsive-theme as master theme to work.
+This theme needs Responsive-theme as "parent-theme" to work.
 
 ## Plugins in use
 * google-calendar-events
